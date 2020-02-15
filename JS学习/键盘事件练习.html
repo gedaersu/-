@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>键盘事件练习</title>
+    <style>
+
+        #box1{
+
+            width: 100px;
+            height: 100px;
+            background-color: #f00;
+            position: absolute;
+
+        }
+
+    </style>
+    <script>
+
+        window.onload = function () {
+            //根据按键的方向来移动div
+            var box1 = document.getElementById("box1");
+
+            var dir = 0;
+            var speed = 10;
+
+            setInterval(function () {
+                switch (dir){
+                    case 37 :
+                        box1.style.left = box1.offsetLeft - speed + "px";
+                        break;
+                    case 38 :
+                        box1.style.top = box1.offsetTop - speed + "px";
+                        break;
+                    case 39 :
+                        box1.style.left = box1.offsetLeft + speed + "px";
+                        break;
+                    case 40 :
+                        box1.style.top = box1.offsetTop + speed + "px";
+                        break;
+                }
+            },20);
+            document.onkeydown = function (event) {
+                event = event || window.event;
+                //console.log(event.keyCode);
+                //向上 38
+                //向下 40
+                //向左 37
+                //向右 39
+
+
+                //判断Ctrl键是否被按下
+
+                if(event.ctrlKey){
+                    //加速
+                    speed = 30;
+                }else {
+                    speed = 10;
+                }
+                dir = event.keyCode;
+
+
+            };
+
+            document.onkeyup = function () {
+                dir = 0;
+            }
+        };
+
+    </script>
+
+</head>
+<body>
+<div id="box1"></div>
+</body>
+</html>

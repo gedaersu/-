@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定时器的应用</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        #box1{
+            width: 100px;
+            height: 100px;
+            background-color: #f00;
+            position: absolute;
+            margin-top: 100px;
+            left: 0;
+        }
+
+
+
+        #box2{
+            width: 100px;
+            height: 100px;
+            background-color: #bfa;
+            position: absolute;
+            top:450px;
+            left: 0;
+        }
+        
+    </style>
+    <script>
+
+        window.onload = function () {
+          var btn01 = document.getElementById("btn01");
+          var btn02 = document.getElementById("btn02");
+          var box1 = document.getElementById("box1");
+          var box2 = document.getElementById("box2");
+          var btn03 = document.getElementById("btn03");
+
+
+          function move(obj,target,speed,callback) {
+
+              var current = obj.offsetLeft;
+
+              if (current>target) {
+                  speed = -speed;
+              }
+
+              clearInterval(obj.timer);
+
+
+               obj.timer = setInterval(function () {
+
+                   var oldValue = obj.offsetLeft;
+
+
+                   var newValue = oldValue + speed;
+
+                    if (speed<0&&newValue <target || speed>0&&newValue>target){
+                        newValue = target;
+                    }
+
+                    obj.style.left = newValue + "px";
+
+                    if (newValue==target) {
+                        clearInterval(obj.timer);
+
+                        callback && callback();
+                    }
+
+               },30)
+          }
+
+          btn01.onclick = function () {
+              move(box1,800,20);
+          };
+
+          btn02.onclick = function () {
+                move(box1,0,20);
+          };
+          btn03.onclick = function () {
+                move(box2,800,10,function () {
+                    move(box2,0,20,function () {
+                        move(box2,800,30,function () {
+                            move(box2,0,40,);
+                        });
+                    });
+                });
+            };
+
+        };
+
+
+
+    </script>
+</head>
+<body>
+<br><br><br><br>
+
+<button id="btn01">点击按钮div向右移动</button><br>
+<button id="btn02">点击按钮div向左移动</button><br>
+<button id="btn03">点击按钮box2向右移动</button><br>
+
+<div id="box1"></div>
+
+<div style="position: absolute;top: 0;left: 800px;border-left: 1px solid black;height:600px"></div>
+
+<div id="box2"></div>
+</body>
+</html>

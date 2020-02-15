@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../js/jquery-1.10.1.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            //选择第一个div
+            $('#btn1').click(function () {
+                $('div:first').css('background','red');
+            });
+            //选择最后一个class为box的元素
+            $('#btn2').click(function () {
+                $('.box:last').css('background','red');
+            });
+            //选择所有class属性不为box的div
+            $('#btn3').click(function () {
+                $('div:not(.box)').css('background','red');
+            });
+            //选择第二个和第三个li元素
+            $('#btn4').click(function () {
+                $('li:gt(0):lt(2)').css('background','red');
+            });
+            //选择内容为BBBBB的li,且隐藏起来
+            $('#btn5').click(function () {
+                $('li:contains(BBBBB)').css('background','red');
+                $('li:contains(BBBBB)').hide(1000);
+            });
+            //选择隐藏的li
+            $('#btn6').click(function () {
+                $('li:hidden').css('background','red');
+                $('li:hidden').show(1000);
+            });
+            //选择有title属性的li元素
+            $('#btn7').click(function () {
+                $('li[title]').css('background','red');
+            });
+            //选择所有属性title为hello的li元素
+            $('#btn8').click(function () {
+                $('li[title=hello]').css('background','red');
+            })
+            //选择所有属性title不为hello的li元素
+            $('#btn9').click(function () {
+                $('li[title][title!=hello]').css('background','red');
+            })
+        })
+    </script>
+</head>
+<body>
+<div id="div1" class="box">class为box的div1</div>
+<div id="div2" class="box">class为box的div2</div>
+<div id="div3">div3</div>
+<span class="box">class为box的span</span>
+<br>
+<ul>
+    <li>AAAAA</li>
+    <li title="hello">BBBBB(title="hello"）</li>
+    <li class="box">CCCCC（class="box"）</li>
+    <li title="hello">DDDDD（title="hello"）</li>
+    <li title="two">BBBBB（title="two"）</li>
+    <li style="display: none">我本来是隐藏的</li>
+</ul>
+<br>
+<button id="btn1">选择第一个div</button>
+<button id="btn2">选择最后一个class为box的元素</button><br>
+<button id="btn3">选择所有class属性不为box的div</button>
+<button id="btn4">选择第二个和第三个li元素</button><br>
+<button id="btn5">选择内容为BBBBB的li,且隐藏起来</button>
+<button id="btn6">选择隐藏的li</button><br>
+<button id="btn7">选择有title属性的li元素</button>
+<button id="btn8">选择所有属性title为hello的li元素</button>
+<button id="btn9">选择所有属性title不为hello的li元素</button>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>核心函数</title>
+    <script type="text/javascript" src="../js/jquery-1.10.1.js"></script>
+    <script type="text/javascript">
+
+
+        $(function () {
+            $('#btn').click(function () {
+                alert($(this).html());
+                $('<input type="text" name="msg2"/><br>').appendTo('.box')
+            });
+            var arr = [1,2,3,4,5];
+            $.each(arr,function (index, item) {
+                console.log((index, item));
+            })
+            var str = '   myatuigu   ';
+            console.log('---'+$.trim(str)+'---');
+            console.log('---'+str.trim()+'---')
+        })
+
+
+    </script>
+</head>
+<body>
+<div class="box">
+    <button id="btn">测试</button>
+    <br>
+
+    <input type="text" name="msg1"/><br>
+    <input type="text" name="msg2"/><br>
+
+</div>
+</body>
+</html>

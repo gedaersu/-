@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<select id="selProvince">
+  <option value="">--请选择省份--</option>
+
+</select>
+<select id="selCity">
+  <option value="">--请选择城市--</option>
+</select>
+<select id="selCounty">
+  <option value="">--请选择区/县--</option>
+</select>
+
+<script type="text/javascript" src="../js/jquery-1.11.1.js"></script>
+<script type="text/javascript">
+  /*
+  * 明确需求：
+  *   1.当页面加载的时候获取省级单位的所有数据并填充到页面
+  *   2. 当省级单位的select切换的时候发送请求获取当前省对应的市级单位数据
+  *   3. 当市级单位的select切换的时候发送请求获取当前市对应的所有区/县级单位的数据
+  *
+  * 接口文档：
+  *   一： 获取省级单位的数据
+  *    请求方式： GET
+  *    请求的url: '/getProvinces',
+  *    请求参数: 无
+  *    返回的数据格式: json
+  *   二： 获取当前省对应的所有市级单位的数据
+  *    请求方式： POST
+  *    请求的url： '/getCities',
+  *    请求的参数: provinceId,
+  *    返回的数据格式: json
+  *   三： 获取当前市对应的所有区/县单位的数据
+  *    请求方式： GET
+  *    请求的url： '/getCounties',
+  *    请求的参数: cityId,
+  *    返回的数据格式: json
+  * */
+
+  $(function () {
+    var $selProvince = $('#selProvince');
+    var $selCity = $('#selCity');
+    var $selCounty = $('#selCounty');
+    // 发送请求获取所有的省级单位的数据
+    $.ajax({
+      type: 'GET',
+      url: '/getProvinces',
+      success: function (provinces) {
+        console.log(provinces);
+        provinces.forEach(function (province, index) {
+          var provinceHtml = '<option value="' + province.id +'">' + province.province + '</option>';
+          $selProvince.append(provinceHtml);
+        })
+      }
+    });
+
+
+    $selProvince.change(function () {
+
+      // 移除之前的option(第一个除外)
+      $selCity.children().not(':first').remove();
+      $selCounty.children().not(':first').remove();
+
+      // 当前省级单位的id
+      console.log(this.value);
+      var provinceId = this.value;
+      if(provinceId == ''){
+        return;
+      }
+      $.post('/getCities', {provinceId: provinceId}, function (cities) {
+        // console.log(cities);
+        cities.forEach(function (city) {
+          var citiesHtml = '<option value="' + city.id +'">' + city.city + '</option>';
+          $selCity.append(citiesHtml);
+        })
+      });
+    });
+    $selCity.change(function () {
+      $selCounty.children().not(':first').remove();
+      var cityId = this.value;
+      $.getJSON('/getCounties', {cityId: cityId}, function (counties) {
+        counties.forEach(function (county, index) {
+          var countiesHtml = '<option value="' + county.id +'">' + county.county + '</option>';
+          $selCounty.append(countiesHtml);
+        })
+      })
+    });
+
+  });
+</script>
+</body>
+</html>

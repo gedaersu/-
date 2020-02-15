@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定时器</title>
+    <script>
+
+        window.onload = function () {
+
+            var count = document.getElementById("count");
+
+            var n = 1;
+
+            var timer = setInterval(function(){
+                count.innerHTML = n++;
+                if (n==11) {
+                    clearInterval(timer);
+                }
+            },500);
+        };
+
+    </script>
+</head>
+<body>
+<h1 id="count"></h1>
+</body>
+</html>

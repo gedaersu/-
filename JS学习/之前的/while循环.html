@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>while循环</title>
+
+    <script>
+        /*var n = 1000 , b = 0;
+
+        do {
+            n *= 1.05 ;
+            ++b;
+        }while (n < 5000){
+            document.write( b );
+        }*/
+
+
+        var n = +prompt("本金");
+        b = 0;
+        m = +prompt("银行年利率");
+        x = +prompt("期望值");
+
+        do {
+            n = n + n * m ;
+            ++b;
+        }while (n < x);{
+            document.write( "得存" + b + "年" );
+        }
+
+
+
+
+
+
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

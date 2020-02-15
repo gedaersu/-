@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>初识jQuery</title>
+    <script>
+        window.onload = function () {
+            var btn = document.getElementById("btn01");
+            btn01.onclick = function () {
+                alert(document.getElementById("username").value)
+            }
+
+        }
+    </script>
+
+    <script type="text/javascript" src="../js/jquery-1.10.1.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#btn02').click(function () {
+              alert($('#username').val())
+
+            })
+        })
+    </script>
+</head>
+<body>
+用户名：<input type="text" id="username">
+<button id="btn01">确定（原生版）</button>
+<button id="btn02">确定（jQuery版）</button>
+</body>
+</html>

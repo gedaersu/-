@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>测试</title>
+</head>
+<body>
+<input type="text" placeholder="数值" id="number">
+<button id="btn">计算</button>
+<script type="text/javascript">
+  var input = document.getElementById('number')
+  document.getElementById('btn').onclick = function () {
+    var number = input.value
+    var worker = new Worker('worker.js')
+    worker.onmessage = function (event) {
+      alert(event.Data)
+    }
+    worker.postMessage(number)
+
+  }
+</script>
+</body>
+</html>

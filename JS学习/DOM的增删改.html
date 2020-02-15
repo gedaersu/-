@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>div跟随鼠标移动</title>
+    <style type="text/css">
+        #box1{
+            width:  100px;
+            height: 100px;
+            background-color: #f00;
+            position: absolute;
+        }
+    </style>
+    <script>
+        
+        window.onload = function () {
+
+            var box1 = document.getElementById("box1");
+            document.onmousemove = function (event) {
+                event = event || window.event;
+
+                var st = document.documentElement.scrollTop;
+                var sl = document.documentElement.scrollLeft;
+
+                var left = event.clientX +sl;
+                var top = event.clientY +st;
+
+                box1.style.left = left + "px";
+                box1.style.top = top + "px";
+            };
+        };
+        
+    </script>
+</head>
+<body style="height: 5000px;width: 5000px">
+
+<div id="box1"></div>
+
+</body>
+</html>
