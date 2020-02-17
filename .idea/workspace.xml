@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b41e402-1e6b-4131-a74f-d2cf84edf6c4" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/骰子.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,7 +21,17 @@
     </favorites_list>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="骰子.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/骰子.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="840">
+              <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -41,7 +52,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/jQ/初识jQuery.html" />
         <option value="$PROJECT_DIR$/jQ/核心函数.html" />
         <option value="$PROJECT_DIR$/jQ/测试按钮.html" />
         <option value="$PROJECT_DIR$/jQ/123.html" />
@@ -92,6 +102,7 @@
         <option value="$PROJECT_DIR$/ModularTest/work/三级联动/node_modules/china-area-data/v4/only_2_level_city_id.json" />
         <option value="$PROJECT_DIR$/ModularTest/work/三级联动/node_modules/china-area-data/readme.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/骰子.html" />
       </list>
     </option>
   </component>
@@ -183,7 +194,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -312,24 +323,26 @@
       <workItem from="1581577578259" duration="3630000" />
       <workItem from="1581669612692" duration="2392000" />
       <workItem from="1581672031924" duration="3324000" />
-      <workItem from="1581764852779" duration="1540000" />
+      <workItem from="1581764852779" duration="3916000" />
+      <workItem from="1581938228135" duration="262000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="234526000" />
+    <option name="totallyTimeSpent" value="237164000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4968153" visible="true" weight="0.19080338" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4968153" visible="true" weight="0.19080338" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32845894" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3295325" />
       <window_info id="Structure" order="1" sideWeight="0.50318474" side_tool="true" weight="0.22674419" />
-      <window_info active="true" anchor="bottom" x="5" y="557" width="1892" height="425" id="Terminal" order="7" visible="true" weight="0.30786774" />
+      <window_info anchor="bottom" x="5" y="557" width="1892" height="425" id="Terminal" order="7" weight="0.30786774" />
       <window_info id="Favorites" order="2" sideWeight="0.5008489" side_tool="true" weight="0.13794926" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3990981" />
       <window_info anchor="bottom" id="TypeScript" order="7" />
@@ -340,7 +353,7 @@
       <window_info anchor="bottom" id="Inspection Results" order="8" weight="0.32919955" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.3295325" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295325" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -364,34 +377,6 @@
     <select />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ModularTest/work/06_ES6_Babel_Browserify/js/src/module2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ModularTest/work/06_ES6_Babel_Browserify/js/src/module1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ModularTest/work/06_ES6_Babel_Browserify/js/src/module3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Roaming/npm/node_modules/browserify/node_modules/browser-resolve/node_modules/resolve/lib/async.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="21" column="60" lean-forward="true" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ModularTest/教程_笔记/2_CommonJS_Node模块化教程.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
@@ -637,6 +622,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/images/b.png">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/骰子.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
         </state>
       </provider>
     </entry>
