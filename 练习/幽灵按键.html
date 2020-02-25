@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>幽灵按键</title>
+  <style>
+    #wrap{
+      position: relative;
+      width: 300px;
+      height: 80px;
+      margin: 100px auto;
+      background-color: #aeb4d6;
+      color: #fff;
+      font-size: 45px;
+      text-align: center;
+      line-height: 80px;
+      text-transform: uppercase;
+      font-weight: bold;
+      transition: 2s;
+    }
+    #top{
+      position:absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 10px;
+      background-color: #aeb4d6;
+      transition: 2s;
+    }
+    #bottom{
+      position:absolute;
+      bottom: 0;
+      right: 0;
+      width: 0;
+      height: 10px;
+      background-color:#aeb4d6;
+      transition: 2s;
+    }
+    #wrap:hover{
+      background-color: white;
+      color: #aeb4d6;
+    }
+    #wrap:hover #top,#wrap:hover #bottom{
+      width: 300px;
+    }
+
+  </style>
+</head>
+<body>
+<div id="wrap">
+  <div id="top"></div>
+  html5
+  <div id="bottom"></div>
+</div>
+</body>
+</html>
