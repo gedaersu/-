@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b41e402-1e6b-4131-a74f-d2cf84edf6c4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/练习/太极图练习.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/练习/幽灵按键.html" afterDir="false" />
+    <list default="true" id="9b41e402-1e6b-4131-a74f-d2cf84edf6c4" name="Default" comment="练习">
+      <change afterPath="$PROJECT_DIR$/jQ/js/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/练习/太极图练习2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/骰子/骰子1.html" beforeDir="false" afterPath="$PROJECT_DIR$/骰子/骰子1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/练习/太极图练习.html" beforeDir="false" afterPath="$PROJECT_DIR$/练习/太极图练习.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,9 +26,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="太极图练习.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="太极图练习.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/练习/太极图练习.html">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="91" column="41" selection-start-line="91" selection-start-column="10" selection-end-line="91" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="太极图练习2.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/练习/太极图练习2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-58">
+              <caret line="90" column="72" selection-start-line="90" selection-start-column="72" selection-end-line="90" selection-end-column="72" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="幽灵按键.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/练习/幽灵按键.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="33" column="15" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -40,8 +63,8 @@
         <option value="HTTP Request" />
         <option value="tsconfig.json" />
         <option value="package_json" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -54,10 +77,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/jQ/day01/测试.html" />
-        <option value="$PROJECT_DIR$/jQ/day01/abcd.ts" />
-        <option value="$PROJECT_DIR$/jQ/abc.http" />
-        <option value="$PROJECT_DIR$/jQ/package.json" />
         <option value="$PROJECT_DIR$/modular/code/ModularTest/work/02_CommonJS-Node/package.json" />
         <option value="$PROJECT_DIR$/modular/code/ModularTest/prepare/02_CommonJS-Node/package.json" />
         <option value="$PROJECT_DIR$/modular/code/ModularTest/prepare/02_CommonJS-Node/modules/module3.js" />
@@ -101,10 +120,14 @@
         <option value="$PROJECT_DIR$/骰子5.html" />
         <option value="$PROJECT_DIR$/骰子6.html" />
         <option value="C:/Program Files/Git/etc/ssh/ssh_config" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/骰子/骰子1.html" />
         <option value="$PROJECT_DIR$/练习.html" />
         <option value="$PROJECT_DIR$/练习/幽灵按键.html" />
+        <option value="$PROJECT_DIR$/练习/111.html" />
+        <option value="$PROJECT_DIR$/练习/111.js" />
+        <option value="$PROJECT_DIR$/练习/太极图练习.html" />
+        <option value="$PROJECT_DIR$/练习/太极图练习2.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -349,8 +372,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="145" />
-    <option name="y" value="5" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1530" />
     <option name="height" value="1035" />
   </component>
@@ -367,6 +390,11 @@
             <path>
               <item name="biancheng" type="b2602c69:ProjectViewProjectNode" />
               <item name="biancheng" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="biancheng" type="b2602c69:ProjectViewProjectNode" />
+              <item name="biancheng" type="462c0819:PsiDirectoryNode" />
+              <item name="jQ" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="biancheng" type="b2602c69:ProjectViewProjectNode" />
@@ -405,22 +433,22 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="G:\biancheng\骰子" />
-      <recent name="G:\biancheng\modular\code\ModularTest\work\02_CommonJS-Node" />
-      <recent name="G:\biancheng" />
-      <recent name="G:\biancheng\jQ\day01" />
-      <recent name="G:\biancheng\jQ" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\biancheng\练习" />
       <recent name="G:\biancheng" />
       <recent name="G:\biancheng\ModularTest\work\三级联动" />
       <recent name="G:\biancheng\ModularTest\work\03_CommonJS-Browserify\js\src" />
       <recent name="G:\biancheng\ModularTest\work\02_CommonJS-Node\modules" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\biancheng\jQ\js" />
+      <recent name="G:\biancheng\骰子" />
+      <recent name="G:\biancheng\modular\code\ModularTest\work\02_CommonJS-Node" />
+      <recent name="G:\biancheng" />
+      <recent name="G:\biancheng\jQ\day01" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -562,25 +590,38 @@
       <workItem from="1582184137768" duration="91000" />
       <workItem from="1582622707935" duration="27000" />
       <workItem from="1582623421899" duration="239000" />
-      <workItem from="1582639939467" duration="1636000" />
+      <workItem from="1582639939467" duration="1839000" />
+      <workItem from="1582641812568" duration="159000" />
+      <workItem from="1582642096042" duration="534000" />
+      <workItem from="1582698685909" duration="10389000" />
     </task>
+    <task id="LOCAL-00001" summary="练习">
+      <created>1582641765809</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582641765809</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="259448000" />
+    <option name="totallyTimeSpent" value="270733000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4968153" visible="true" weight="0.1515625" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4968153" visible="true" weight="0.19459173" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32908458" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.501321" side_tool="true" weight="0.32239658" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.501321" side_tool="true" weight="0.32150775" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3221321" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3289941" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3295325" />
       <window_info id="Structure" order="1" sideWeight="0.50318474" side_tool="true" weight="0.22674419" />
-      <window_info anchor="bottom" x="5" y="557" width="1892" height="425" id="Terminal" order="7" sideWeight="0.49867898" weight="0.36283186" />
+      <window_info anchor="bottom" x="5" y="557" width="1892" height="425" id="Terminal" order="7" sideWeight="0.49867898" weight="0.3696408" />
       <window_info id="Favorites" order="2" sideWeight="0.5008489" side_tool="true" weight="0.13794926" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3990981" />
       <window_info anchor="bottom" id="TypeScript" order="7" />
@@ -591,7 +632,6 @@
       <window_info anchor="bottom" id="Inspection Results" order="8" weight="0.32919955" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3295325" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -626,6 +666,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="练习" />
+    <option name="LAST_COMMIT_MESSAGE" value="练习" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="2" />
@@ -636,34 +680,6 @@
     <select />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ModularTest/work/三级联动/Chain-area.josn" />
-    <entry file="file://$PROJECT_DIR$/ModularTest/work/三级联动/China-area.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3584">
-          <caret line="128" selection-start-line="128" selection-end-line="128" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ModularTest/work/三级联动/node_modules/china-area-data/vux/china_address_v2.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ModularTest/work/三级联动/node_modules/china-area-data/vux/china_address_v3.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="829" selection-start-line="829" selection-end-line="829" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ModularTest/work/三级联动/node_modules/china-area-data/v4/only_2_level_city_id.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ModularTest/work/三级联动/node_modules/china-area-data/v3/data.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/ModularTest/work/三级联动/node_modules/china-area-data/scripts/format.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3499" />
@@ -817,29 +833,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/练习.html">
+    <entry file="file://$PROJECT_DIR$/练习.html" />
+    <entry file="file://$PROJECT_DIR$/练习/幽灵按键.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="33" column="15" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习/111.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
           <caret line="4" column="14" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/练习/幽灵按键.html">
+    <entry file="file://$PROJECT_DIR$/node_modules/jQuery/lib/node-jquery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1073">
-          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+        <state relative-caret-position="-1305">
+          <folding>
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/jQuery/tmp/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-174">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习/111.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习/太极图练习.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="91" column="41" selection-start-line="91" selection-start-column="10" selection-end-line="91" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQ/js/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        <state relative-caret-position="29">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/练习/太极图练习.html">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/练习/太极图练习2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-58">
+          <caret line="90" column="72" selection-start-line="90" selection-start-column="72" selection-end-line="90" selection-end-column="72" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

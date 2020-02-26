@@ -88,28 +88,36 @@
 </div>
 <button id="btn1">旋转</button>
 <button id="btn2">停止</button>
+<script type="text/javascript" src="../jQ/js/jquery-1.10.1.js"></script>
 <script type="text/javascript">
   var w = document.getElementById('wrap');
   var btn1 = document.getElementById('btn1');
   var btn2 = document.getElementById('btn2');
 
   var a = null;
-    function set() {
-      var i = 0;
-      setInterval(function () {
-        i++;
-        w.style.transform = 'rotate(' + i + 'deg)';
-      }, 10);
-    }
-
-    btn1.onclick = function () {
-        set();
-
-    };
-    btn2.onclick = function () {
-
-    }
-
+   function stsrt() {
+     if (a) {
+       return;
+     }else {
+       var i = 0;
+       a = setInterval(function () {
+         i++;
+         w.style.transform = 'rotate(' + i + 'deg)';
+       },5)
+     }
+   }
+   function end() {
+     if (a) {
+       clearInterval(a);
+       a = null;
+     }
+   }
+  btn1.onclick = function () {
+    stsrt();
+  }
+  btn2.onclick = function () {
+    end();
+  }
 
 </script>
 </body>
