@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>05_components_composing</title>
+</head>
+<body>
+
+  <div id="example"></div>
+
+  <script type="text/javascript" src="../js/react.development.js"></script>
+  <script type="text/javascript" src="../js/react-dom.development.js"></script>
+  <script type="text/javascript" src="../js/prop-types.js"></script>
+  <script type="text/javascript" src="../js/babel.min.js"></script>
+  <script type="text/babel">
+    //App组件
+    class App extends React.Component{
+      constructor(props){
+        super(props);
+        this.state = {
+          todos : ['吃饭','睡觉','打豆豆']
+        }
+      }
+      add = (newTodo) =>{
+        let {todos} = this.state;
+        todos.unshift(newTodo);
+        this.setState({todos});
+      };
+      render(){
+        let {todos} = this.state;
+        return(
+          <div>
+            <h2>simple todo list</h2>
+            <AddTodo add={this.add} todos={todos}/>
+            <TodoList todos={todos}/>
+          </div>
+        )
+      }
+    }
+    //AddTodo组件
+    class AddTodo extends React.Component{
+      addTodo = () => {
+        let result = this.inputDOM.value;
+        if(!result.trim()){
+          alert('输入内容不能为空');
+          return;
+        }
+        this.props.add(result);
+        this.inputDOM.value = '';
+      };
+      render(){
+        let {todos} = this.props;
+        let length = todos.length;
+        return(
+          <div>
+            <input ref={input=>this.inputDOM = input} type="text"/>
+            <button onClick={this.addTodo}>add #{length}</button>
+          </div>
+        )
+      }
+    }
+    //TodoList组件
+    class TodoList extends React.Component{
+      render(){
+        let {todos} = this.props;
+        return(
+          <div>
+            <ul>
+              {
+                todos.map((todo,index) => <li key={index}>{todo}</li>)
+              }
+            </ul>
+          </div>
+        )
+      }
+    }
+
+   ReactDOM.render(<App/>, document.getElementById('example'));
+  </script>
+</body>
+</html>

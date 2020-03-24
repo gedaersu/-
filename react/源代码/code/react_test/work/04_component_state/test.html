@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>07_component_state</title>
+</head>
+<body>
+
+<div id="example"></div>
+
+<script type="text/javascript" src="../js/react.development.js"></script>
+<script type="text/javascript" src="../js/react-dom.development.js"></script>
+<script type="text/javascript" src="../js/babel.min.js"></script>
+
+<script type="text/babel">
+  /*
+  需求: 自定义组件, 功能说明如下
+    1. 显示h2标题, 初始文本为: 你喜欢我
+    2. 点击标题更新为: 我喜欢你
+  */
+
+  class ChangeCode extends React.Component {
+    constructor (props) {
+      super(props)
+      this.state = {
+        isLike: true,
+      }
+      // this.handleClick = this.handleClick.bind(this);
+
+    }
+    handleClick = ()=>{
+      let isLike = !this.state.isLike;
+
+      this.setState({isLike});
+    }
+    render(){
+      let {isLike} = this.state;
+      return <h1 onClick={this.handleClick}>{isLike?'我喜欢你':'你喜欢我'}</h1>
+    }
+  }
+
+  ReactDOM.render(< ChangeCode />,document.getElementById('example'));
+
+
+  let obj = {name:'kobe',age:30}
+  let{age} = obj;
+  console.log(age)
+</script>
+</body>
+</html>
+
